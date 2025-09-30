@@ -1,4 +1,4 @@
-package com.storefront.model;
+package model;
 
 public enum CartStatus {
 	// Define constants for the enum
