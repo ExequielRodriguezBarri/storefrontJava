@@ -16,10 +16,10 @@ public class Offer {
 	 */
 	public String title;
 	public DiscountType discountType;
-	public BigDecimal _discountValue;
-	public Date _startDate;
-	public Date _endDate;
-	public boolean _isActive;
+	public BigDecimal discountValue;
+	public Date startDate;
+	public Date endDate;
+	public boolean isActive;
 
 	/**
 	 * Operations
