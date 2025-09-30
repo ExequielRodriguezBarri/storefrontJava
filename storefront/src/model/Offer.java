@@ -14,8 +14,8 @@ public class Offer {
 	/**
 	 * 1 -- 1 Product
 	 */
-	public String _title;
-	public DiscountType _discountType;
+	public String title;
+	public DiscountType discountType;
 	public BigDecimal _discountValue;
 	public Date _startDate;
 	public Date _endDate;

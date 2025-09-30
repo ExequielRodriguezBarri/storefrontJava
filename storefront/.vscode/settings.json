@@ -3,5 +3,7 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.checkstyle.configuration": "${workspaceFolder}\\src\\model\\checkstyle.xml",
+    "java.checkstyle.version": "11.1.0"
 }
