@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    // No external dependencies required; keep for completeness
+    mavenCentral()
+}
+
+// Ensure test sources compile and are available on the classpath
+sourceSets {
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+    }
+}
+
+// Custom test runner (framework.TestRunner) executes annotated tests
+tasks.register('customTest', JavaExec) {
+    group = 'verification'
+    description = 'Runs custom tests via framework.TestRunner'
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'framework.TestRunner'
+}
+
+// Make standard verification run the custom tests
+tasks.named('check') {
+    dependsOn tasks.named('customTest')
+}
+
