@@ -9,6 +9,7 @@ import java.util.Objects;
 
 public class Cart {
 	private int _iD2;
+	private int _iD;
 	public User _user;
 	/**
 	 * 1 -- 1 User

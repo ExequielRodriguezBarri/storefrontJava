@@ -5,6 +5,7 @@ import java.math.RoundingMode;
 
 public class OrderItem {
 	private int _iD2;
+	private int _iD;
 	public Order _order;
 	/**
 	 * 1 -- 1 Order
