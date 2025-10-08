@@ -4,6 +4,7 @@ import java.util.Vector;
 
 public class InventoryItem {
 	private int _iD2;
+	private int _iD;
 	public Store _store;
 	/**
 	 * 1 -- 1 Store
