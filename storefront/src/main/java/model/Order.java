@@ -8,7 +8,6 @@ import java.util.Vector;
 
 public class Order {
 	private int _iD2;
-	private int _iD;
 	public User _user;
 	/**
 	 * 1 -- 1 User
